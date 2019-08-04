@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aplicacion", "aplicacion\aplicacion.csproj", "{BEA400A3-04C2-4D43-A0CA-121191A8FC3F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Formulario Prueba", "C:\Users\usuario\source\repos\Formulario Prueba\Formulario Prueba\Formulario Prueba.csproj", "{1AA6C0F6-48E6-464D-A8A8-16FB19AF66B9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEA400A3-04C2-4D43-A0CA-121191A8FC3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEA400A3-04C2-4D43-A0CA-121191A8FC3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEA400A3-04C2-4D43-A0CA-121191A8FC3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEA400A3-04C2-4D43-A0CA-121191A8FC3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AA6C0F6-48E6-464D-A8A8-16FB19AF66B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AA6C0F6-48E6-464D-A8A8-16FB19AF66B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AA6C0F6-48E6-464D-A8A8-16FB19AF66B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AA6C0F6-48E6-464D-A8A8-16FB19AF66B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {075E8951-EC67-42FC-8E86-6E041040783E}
+	EndGlobalSection
+EndGlobal
