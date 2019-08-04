@@ -43,7 +43,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnAbrirArchivo = new System.Windows.Forms.Button();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtNumEsPorDia = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
@@ -205,14 +205,14 @@
             this.btnAbrirArchivo.UseVisualStyleBackColor = false;
             this.btnAbrirArchivo.Click += new System.EventHandler(this.BtnAbrirArchivo_Click);
             // 
-            // textBox1
+            // txtNumEsPorDia
             // 
-            this.textBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.textBox1.Location = new System.Drawing.Point(403, 288);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 22);
-            this.textBox1.TabIndex = 15;
+            this.txtNumEsPorDia.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.txtNumEsPorDia.Location = new System.Drawing.Point(403, 288);
+            this.txtNumEsPorDia.Margin = new System.Windows.Forms.Padding(4);
+            this.txtNumEsPorDia.Name = "txtNumEsPorDia";
+            this.txtNumEsPorDia.Size = new System.Drawing.Size(133, 22);
+            this.txtNumEsPorDia.TabIndex = 15;
             // 
             // Form1
             // 
@@ -221,7 +221,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = global::aplicacion.Properties.Resources.cafeteria;
             this.ClientSize = new System.Drawing.Size(592, 455);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNumEsPorDia);
             this.Controls.Add(this.btnAbrirArchivo);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtCuDesPorDia);
@@ -261,7 +261,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnAbrirArchivo;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtNumEsPorDia;
     }
 }
 
