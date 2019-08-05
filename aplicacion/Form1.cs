@@ -19,12 +19,10 @@ namespace aplicacion
 
         private OpenFileDialog chooser;
         private Button selectButton;
-        private BackgroundWorker backgroundWorker1;
         public Form1()
         {
             InitializeComponent();
-            pictureBox1.Image = Image.FromFile(@"logo.jpg");
-
+          
              chooser = new OpenFileDialog();
             chooser.FileName = "Seleccione un Archivo de Texto";
             chooser.Filter = "Archivos de Texto(*.txt)|*.txt";
@@ -49,8 +47,6 @@ namespace aplicacion
                     var filePath = chooser.FileName;
                     using (FileStream fs = File.Open(filePath, FileMode.Open))
                     {
-                        Process.Start("notepad.exe", filePath);
-
                         StreamReader sr = new StreamReader(fs);
 
                         txtNombreCaf.Text = sr.ReadLine() ;
