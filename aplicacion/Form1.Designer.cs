@@ -218,8 +218,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.BackgroundImage = global::aplicacion.Properties.Resources.cafeteria;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(592, 455);
             this.Controls.Add(this.txtNumEsPorDia);
             this.Controls.Add(this.btnAbrirArchivo);
@@ -236,8 +238,12 @@
             this.Controls.Add(this.txtNombreCaf);
             this.Font = new System.Drawing.Font("Kristen ITC", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Form1";
+            this.RightToLeftLayout = true;
             this.Text = "Registro de Cubiertos";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

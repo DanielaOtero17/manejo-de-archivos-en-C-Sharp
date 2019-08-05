@@ -21,6 +21,7 @@ namespace aplicacion
         private Button selectButton;
         public Form1()
         {
+            
             InitializeComponent();
           
              chooser = new OpenFileDialog();
@@ -69,14 +70,16 @@ namespace aplicacion
         private void BtnGuardarDatos_Click(object sender, EventArgs e)
         {
 
-          
-            String nombre = txtNombreCaf.Text;
-            String numCuNoDesechablesInicio = txtNoDeIncio.Text;
-            String numCuNoDesechablesFinal = txtNoDeFinal.Text;
-            String cubiertosDesechablesPorDia = txtCuDesPorDia.Text;
-            String numeroPromedioEstudiantesPorDia = txtNumEsPorDia.Text;
+            try
+            {
+                String nombre = txtNombreCaf.Text;
+                int numCuNoDesechablesInicio = int.Parse(txtNoDeIncio.Text);
+                int numCuNoDesechablesFinal = int.Parse(txtNoDeFinal.Text);
+                int cubiertosDesechablesPorDia = int.Parse(txtCuDesPorDia.Text);
+                int numeroPromedioEstudiantesPorDia = int.Parse(txtNumEsPorDia.Text);
+            
             //fijamos dondevamos a crear el archivo 
-            StreamWriter escrito = File.CreateText(nombre+".txt");
+            StreamWriter escrito = File.CreateText(nombre +".txt");
 
             //escribimos. 
             escrito.Write(nombre.ToString());
@@ -100,6 +103,13 @@ namespace aplicacion
             txtNumEsPorDia.Text = "";
 
             MessageBox.Show("El archivo se ha guardado con exito como:"+ nombre + ".txt");
+            }
+            catch (FormatException ex)
+            {
+                MessageBox.Show("Error, hay algun/os valores que no coinciden con el tipo de entrada requerida. Por favor, inténtelo de nuevo.");
+      
+
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
